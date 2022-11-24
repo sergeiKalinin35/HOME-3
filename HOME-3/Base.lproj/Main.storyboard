@@ -31,12 +31,21 @@
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9mF-jd-xeC">
                                 <rect key="frame" x="129" y="180" width="232" height="31"/>
+                                <connections>
+                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="zMb-CI-2Xb"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kBJ-HP-tfW">
                                 <rect key="frame" x="129" y="225" width="232" height="31"/>
+                                <connections>
+                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="JR6-f2-sRE"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vxx-bp-pLS">
                                 <rect key="frame" x="129" y="269" width="232" height="31"/>
+                                <connections>
+                                    <action selector="rgbSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Tqg-rk-lLc"/>
+                                </connections>
                             </slider>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="JX3-1s-tLG">
                                 <rect key="frame" x="22" y="182" width="100.5" height="114"/>
@@ -86,6 +95,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="37.5" id="zNY-3M-uyw"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -111,11 +123,11 @@
                     <connections>
                         <outlet property="blueLabel" destination="QkV-C8-iag" id="mx2-es-f7a"/>
                         <outlet property="blueSlider" destination="vxx-bp-pLS" id="Ivh-kf-jnj"/>
+                        <outlet property="colorView" destination="PGF-aC-VhO" id="eTn-hP-LSA"/>
                         <outlet property="greenLabel" destination="h2l-cO-nix" id="MdX-eM-wtn"/>
                         <outlet property="greenSlider" destination="kBJ-HP-tfW" id="w9z-VF-80z"/>
                         <outlet property="redLabel" destination="gbg-0m-JZF" id="Ild-SZ-tdd"/>
                         <outlet property="redSlider" destination="9mF-jd-xeC" id="RTr-O1-7AV"/>
-                        <outlet property="viewColor" destination="PGF-aC-VhO" id="eTn-hP-LSA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
